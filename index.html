@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Swift PlayList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="loader">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div> -->
+
+    <div class="container">
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+     </div>
+
+    <div class="content" style="display: none;">
+        <div class="heading" align="right">
+            <h1 class="discover">DISCOVER<br><span class="taylor">Taylor Swift</span></h1>
+        </div>
+        
+        <div class="PlayList" align="right">
+            <table >
+                <thead>
+                    <th>
+                        Song
+                    </th>
+                    <th>
+                        
+                    </th>
+                    <th>
+                        Album
+                    </th>
+                    <th>
+                        Duration
+                    </th>
+                </thead>
+                <tr class="song" id="song1" data-audio="audio1">
+                <td style="cursor: pointer;">Enchanted</td>
+                <td><img class="heart" src="emptyheart.png" style="height: 18px; width: 18px;"></td>
+                <td>Speak Now</td>
+                <td>5:53</td>
+            </tr>
+            <tr class="song" id="song2" data-audio="audio2">
+                <td style="cursor: pointer;">Cruel Summer</td>
+                <td><img class="heart" src="emptyheart.png" style="height: 18px; width: 18px;"></td>
+                <td>Lover</td>
+                <td>2:59</td>
+            </tr>
+            <tr class="song" id="song3" data-audio="audio3">
+                <td style="cursor: pointer;">Style</td>
+                <td><img class="heart" src="emptyheart.png" style="height: 18px; width: 18px;"></td>
+                <td>1989</td>
+                <td>4:03</td>
+            </tr>
+            <tr class="song" id="song4" data-audio="audio4">
+                <td style="cursor: pointer;">Cardigan</td>
+                <td><img class="heart" src="emptyheart.png" style="height: 18px; width: 18px;"></td>
+                <td>Folklore</td>
+                <td>4:06</td>
+            </tr>
+            <tr class="song" id="song5" data-audio="audio5">
+                <td style="cursor: pointer;">Karma</td>
+                <td><img class="heart" src="emptyheart.png" style="height: 18px; width: 18px;"></td>
+                <td>Midnights</td>
+                <td>3:29</td>
+            </tr>
+            <tr class="song" id="song6" data-audio="audio6">
+                <td style="cursor: pointer;">Love Story</td>
+                <td><img class="heart" src="emptyheart.png" style="height: 18px; width: 18px;"></td>
+                <td>Fearless</td>
+                <td>3:56</td>
+            </tr>
+            <tr class="song" id="song7" data-audio="audio7">
+                <td style="cursor: pointer;">You Belong With Me</td>
+                <td><img class="heart" src="emptyheart.png" style="height: 18px; width: 18px;"></td>
+                <td>Fearless</td>
+                <td>3:48</td>
+            </tr>
+            <tr class="song" id="song8" data-audio="audio8">
+                <td style="cursor: pointer;">Decilate</td>
+                <td><img class="heart" src="emptyheart.png" style="height: 18px; width: 18px;"></td>
+                <td>Reputation</td>
+                <td>3:51</td>
+            </tr>
+            <tr class="song" id="song9" data-audio="audio9">
+                <td style="cursor: pointer;">You're Losing Me</td>
+                <td><img class="heart" src="emptyheart.png" style="height: 18px; width: 18px;"></td>
+                <td>Midnights</td>
+                <td>4:38</td>
+            </tr>
+            <tr class="song" id="song10" data-audio="audio10">
+                <td style="cursor: pointer;">Lavender Haze</td>
+                <td><img class="heart" src="emptyheart.png" style="height: 18px; width: 18px;"></td>
+                <td>Midnights</td>
+                <td>3:26</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="contoller">
+        <audio id="audio" controls>
+            <source id="audioSource" type="audio/mp3">
+        </audio>
+    </div>
+    
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

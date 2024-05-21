@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inconsolata&display=swap');
+
+body
+{
+    background: #111;
+}
+
+.content
+{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+}
+
+.heading
+{
+    color: rgb(255, 255, 255);
+    padding-right: 2rem;
+    margin-top: 0px;
+    text-align: right;
+    /* font-size: 30px; */
+}
+
+table
+{
+    border-style: none;
+    text-align: center;
+    width: 35%;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+thead
+{
+    border-bottom: rgb(197, 187, 187);
+}
+
+th
+{
+    color: white;
+    font-size: x-large;
+    padding-bottom: 1rem;
+}
+
+tr
+{
+    text-align: left;
+    padding: 2rem;
+}
+
+td
+{
+    padding: 0.5rem;
+}
+
+.heart:hover
+{
+    cursor: pointer;
+}
+
+.heart.filled
+{
+    content: url(filledheart.png);
+}
+
+.contoller
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(255, 255, 255, 0); */
+    border-bottom-left-radius: 14.17px;
+    border-bottom-right-radius: 14.17px;
+    backdrop-filter: blur(10.63px);
+}
+
+audio
+{
+    margin: 1rem;
+    width: 50%;
+}
+
+.playing {
+    border-radius: 0.39169rem;
+    background: rgba(217, 217, 217, 0.20);
+    box-shadow: 0px 3.134px 3.917px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+.song
+{
+    color: rgb(165, 153, 153);
+}
+
+.song:hover
+{
+    color: white;
+}
+
+.taylor{
+    font-size: 150px;
+    font-family: 'Allura';
+}
+
+.taylor:hover
+{
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.discover
+{
+    font-size: 30px;
+    font-family: 'Inconsolata';
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #7c7c7c;
+    color: #fff;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+    animation: animate_4010 8s ease-in-out infinite;
+}
+
+.bubble:nth-child(2) {
+    position: relative;
+    zoom: 0.45;
+    left: -10px;
+    top: -100px;
+    animation-delay: -4s;
+}
+
+.bubble:nth-child(3) {
+    position: relative;
+    zoom: 0.45;
+    right: -80px;
+    top: -300px;
+    animation-delay: -6s;
+}
+
+.bubble:nth-child(4) {
+    position: relative;
+    zoom: 0.35;
+    left: -120px;
+    bottom: -200px;
+    animation-delay: -3s;
+}
+
+.bubble:nth-child(5) {
+    position: relative;
+    zoom: 0.5;
+    left: 0px;
+    top: 200px;
+    animation-delay: -5s;
+}
+
+@keyframes animate_4010 {
+    0%, 100% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.bubble::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 10;
+    filter: blur(2px);
+}
+
+.bubble::after {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 10;
+    filter: blur(2px);
+}
+
+.bubble span {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bubble span:nth-child(1) {
+    inset: 10px;
+    border-left: 15px solid #0fb4ff;
+    filter: blur(8px);
+}
+
+.bubble span:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid #ff4484;
+    filter: blur(8px);
+}
+
+.bubble span:nth-child(3) {
+    inset: 10px;
+    border-top: 15px solid #ffeb3b;
+    filter: blur(8px);
+}
+
+.bubble span:nth-child(4) {
+    inset: 30px;
+    border-left: 15px solid #ff4484;
+    filter: blur(12px);
+}
+
+.bubble span:nth-child(5) {
+    inset: 10px;
+    border-bottom: 10px solid #fff;
+    filter: blur(8px);
+    transform: rotate(330deg);
+}
